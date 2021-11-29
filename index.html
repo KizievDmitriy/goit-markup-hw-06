@@ -405,9 +405,8 @@
                 <div class="mail-box social-box">
                     <p class="footer-box-title">Подпишитесь на рассылку</p>
                     <form action="" class="social-list">
-                        
-                        <label for="" class="mail-label">
-                            <input type="email" name="email" placeholder="E-mail" >
+                        <label for="email" >
+                            <input type="email" name="email" placeholder="E-mail" id="email" class="mail-label">
                         </label>
                         <button type="submit" aria-label="Подписаться" class="btn  hero-btn  footer-btn" >
                             Подписаться
@@ -425,12 +424,37 @@
     </footer>
     <div class="backdrop is-hidden "data-modal>
         <div class="modal">
-            
                 <button data-modal-close type="button" class="modal-link ">
                     <svg class="modal-item-close " width="11" height="11">
                         <use href="./image/symbol-defs.svg#icon-close"></use>
                     </svg>
-                </button>    
+                </button>
+                <p class="modal-heder-text"><b>Оставьте свои данные, мы вам перезвоним</b></p>
+                <form action="" class="form">
+                    <div class="form-modal">
+                        <label for="username" class=" form-label">Имя</label>
+                        <input type="text" name="username" autofocus id="username" class="form-input">
+                    </div>
+                    <div class="form-modal">
+                        <label for="phone-number" class="form-label">Телефон</label>
+                        <input type="tel" name="phone-number" id="phone-number" class="form-input">
+                    </div>
+                    <div class="form-modal">
+                        <label for="phone-number" class="form-label">Почта</label>
+                        <input type="tel" name="phone-number" id="phone-number" class="form-input">
+                    </div>
+                    <div class="form-modal">
+                        <label for="coment" class="form-label">Комментарий</label>
+                        <textarea name="feedback" rows="5" placeholder="Введите текст" class="modal-txt-area form-input" id="coment"></textarea>
+                    </div>
+                    <div class="chekbox-txt form-label">
+                        <label for="checkbox" ></label>
+                        <input type="checkbox" id="checkbox" name="checkbox"  class="form-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="chekbox-txt-accent">Условия договора</a> 
+                    </div>
+                    <div class="form-button"><button type="submit" class="btn  hero-btn modal-btn">Отправить</button></div>
+                    
+                </form>
+            
             
         </div>
     </div>

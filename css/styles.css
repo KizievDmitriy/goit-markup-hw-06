@@ -374,13 +374,21 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .mail-label {
   width: 358px;
   height: 50px;
   margin-right: 12px;
+  padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  background-color: inherit;
+  font-size: 16px;
+  line-height: 1.25em;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-item-telega {
   width: 20px;
   height: 20px;
@@ -655,4 +663,59 @@ img {
   background: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-heder-text {
+  padding: 40px 40px 0px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.form {
+  width: 448px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+}
+.form-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 14px;
+}
+.chekbox-txt {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+}
+.modal-txt-area {
+  padding: 12px 16px;
+  resize: none;
+}
+.form-checkbox {
+  margin-right: 8.38px;
+}
+.chekbox-txt-accent {
+  color: var(--accent-color);
+}
+.form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
