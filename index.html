@@ -430,8 +430,8 @@
                     </svg>
                 </button>
                 <p class="modal-heder-text"><b>Оставьте свои данные, мы вам перезвоним</b></p>
-                /*---------------------------------------- modal-form -------------------------------*/
-                <form action=" " class="form">
+                <!-- /*---------------------------------------- modal-form -------------------------------*/ -->
+                <form  class="form">
                     <div class="form-modal">
                         <label for="username" class=" form-label">Имя</label>
                         <input type="text" name="username" autofocus id="username" class="form-input">
@@ -457,12 +457,16 @@
                         <label for="coment" class="form-label">Комментарий</label>
                         <textarea name="feedback" rows="5" placeholder="Введите текст" class="modal-txt-area form-input" id="coment"></textarea>
                     </div>
-                    /*------------------------------------ modal-chekbox --------------------------------------*/
-                    <label for="checkbox" class="chekbox-txt" >
+                    <!-- /*------------------------------------ modal-chekbox --------------------------------------*/ -->
+                    <label for="checkbox" class="chekbox-txt">
                         <input type="checkbox" name="checkbox" class="checkbox" id="checkbox">
-                        <span class="form-checkbox"></span>Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="chekbox-txt-accent">Условия договора</a>
+                        <span class="form-checkbox"></span>Соглашаюсь с рассылкой и принимаю&nbsp;
+                        <a href="" class="chekbox-txt-accent">Условия договора</a>
+                        <svg class="checkbox-icon" width="16" height="15">
+                            <use href="./image/symbol-defs.svg#icon-icon-check"></use>
+                        </svg>
                     </label>
-                    /*------------------------------------------------- modal-main-btn -----------------------------*/
+                    <!-- /*------------------------------------------------- modal-main-btn -------------------------*/ -->
                     <div class="form-button"><button type="submit" class="btn  hero-btn modal-btn">Отправить</button></div>    
                 </form>
             
