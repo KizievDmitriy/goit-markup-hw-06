@@ -430,6 +430,7 @@
                     </svg>
                 </button>
                 <p class="modal-heder-text"><b>Оставьте свои данные, мы вам перезвоним</b></p>
+                /*---------------------------------------- modal-form -------------------------------*/
                 <form action="" class="form">
                     <div class="form-modal">
                         <label for="username" class=" form-label">Имя</label>
@@ -456,10 +457,12 @@
                         <label for="coment" class="form-label">Комментарий</label>
                         <textarea name="feedback" rows="5" placeholder="Введите текст" class="modal-txt-area form-input" id="coment"></textarea>
                     </div>
-                    <label class="chekbox-txt">
-                        <input type="checkbox" name="checkbox" class="checkbox">
+                    /*------------------------------------ modal-chekbox --------------------------------------*/
+                    <label for="checkbox" class="chekbox-txt" >
+                        <input type="checkbox" name="checkbox" class="checkbox" id="checkbox">
                         <span class="form-checkbox"></span>Соглашаюсь с рассылкой и принимаю&nbsp<a href="" class="chekbox-txt-accent">Условия договора</a>
                     </label>
+                    /*------------------------------------------------- modal-main-btn -----------------------------*/
                     <div class="form-button"><button type="submit" class="btn  hero-btn modal-btn">Отправить</button></div>    
                 </form>
             

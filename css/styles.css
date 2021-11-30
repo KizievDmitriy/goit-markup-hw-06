@@ -651,7 +651,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--animation-cubic) scale(1);
 }
-
+/*-------------------------------------- modal-close-btn -----------------------------------*/
 .modal-link {
   position: absolute;
   top: 8px;
@@ -666,9 +666,11 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-link:hover {
+.modal-link:hover,
+.modal-link:focus {
   fill: var(--accent-color);
 }
+
 .modal-heder-text {
   padding: 40px 40px 0px;
   font-weight: 700;
@@ -677,6 +679,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+/*---------------------------------------- modal-form -------------------------------*/
 .form {
   width: 448px;
   margin-top: 12px;
@@ -697,6 +700,7 @@ img {
   letter-spacing: 0.01em;
   color: var(--title-text-color);
 }
+/*-------------------------------- modal-form-input -----------------------------------*/
 .form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -704,16 +708,19 @@ img {
   padding: 12px 42px;
   cursor: pointer;
 }
-
+.form-input:focus,
+.form-input:hover {
+  border-color: var(--accent-color);
+}
 .form-input:focus ~ .form-icon {
   fill: var(--accent-color);
-  border-color: var(--accent-color);
 }
 .form-icon {
   position: absolute;
   top: 50%;
   left: 12px;
 }
+/*------------------------------------ modal-chekbox --------------------------------------*/
 .chekbox-txt {
   display: flex;
   align-items: center;
@@ -730,6 +737,7 @@ img {
   resize: none;
 }
 .checkbox {
+  position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -751,6 +759,7 @@ img {
 .chekbox-txt-accent {
   color: var(--accent-color);
 }
+/*------------------------------------------------- modal-main-btn -----------------------------*/
 .form-button {
   display: flex;
   align-items: center;
