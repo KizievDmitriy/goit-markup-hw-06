@@ -148,15 +148,10 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  /* opacity: 0; */
-
-  /* transform: scaleX(0);
-  transition: opacity 250ms var(--animation-cubic), transform 250ms var(--animation-cubic); */
 }
 
 .link:hover:after {
   opacity: 1;
-  /* transform: scaleX(1); */
 }
 
 .item-mail-svg {
@@ -208,8 +203,9 @@ img {
   text-decoration: none;
   border: none;
   cursor: pointer;
-
-  transition: color 250ms var(--animation-cubic), background 250ms var(--animation-cubic);
+  box-shadow: none;
+  transition: color 250ms var(--animation-cubic), background 250ms var(--animation-cubic),
+    box-shadow 250ms var(--animation-cubic);
 }
 
 .btn:focus,
@@ -724,6 +720,8 @@ img {
   position: absolute;
   top: 50%;
   left: 12px;
+  fill: var(--primary-text-color);
+  transition: fill 250ms var(--animation-cubic);
 }
 
 .modal-txt-area {
