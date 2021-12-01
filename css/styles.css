@@ -662,7 +662,7 @@ img {
 }
 .modal-item-close {
   fill: var(--primary-text-color);
-  transform: fill 250ms var(--animation-cubic);
+  transition: fill 250ms var(--animation-cubic);
 }
 .modal-link:hover .modal-item-close,
 .modal-link:focus .modal-item-close {
